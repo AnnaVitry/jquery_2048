@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+  <header></header>
+  <h1 class="h1">Welcome to my 2048</h1>
+  <button id="startButt" class="button">Start</button>
+  <input type="text" class="input" id="size" value="4">
+  <div id="div_start">
+  </div>
+  <footer></footer>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="plugin.js"></script>
+  <script type="text/javascript">
+    $('#startButt').click(function (){
+      $("#div_start").start2048();
+    });
+  </script>
+
+</body>
+</html>
